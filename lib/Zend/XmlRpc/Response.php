@@ -177,7 +177,7 @@ class Zend_XmlRpc_Response
         }
 
         /* Magento security patch 05/07/2012 */
-        libxml_disable_entity_loader($loadEntities);
+        libxml_disable_entity_loader(true);
         libxml_use_internal_errors(true);
 		
         try {
